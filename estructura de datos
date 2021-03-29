@@ -1,0 +1,86 @@
+string[] pets = new string[]
+{​​
+"Dog",
+"Bird",
+"Cat"
+}​​;
+
+
+
+Array.Sort(pets);
+foreach (string mascotas in pets)
+{​​
+Console.WriteLine(mascotas);
+}​​
+
+
+
+char[] arreglo = {​​ '/', '@', '&', '=', '%', '!' }​​;
+Console.WriteLine("Sin orden: " + new string(arreglo));
+Console.WriteLine("0--------------------------------------0");
+
+
+
+Array.Sort<char>(arreglo);
+
+Console.WriteLine("Acomodados: " + new string(arreglo));
+
+
+string[] callesCiudad = new string[]
+{​​
+"Revolucion",
+"Calle UPCI",
+"Tepojaco Dr.",
+"LagoDGpe Road."
+}​​;
+var resultado = from nombres in callesCiudad
+orderby nombres
+select nombres;
+
+
+
+foreach (string valor in resultado)
+{​​
+Console.WriteLine(valor);
+}​​
+
+
+
+
+
+//The bubble
+int[] a = {​​ 3, 0, 5, 2, -1, 4, 1 }​​;
+int t;
+Console.WriteLine("Array Original");
+foreach (int a2 in a)
+Console.WriteLine(a2);
+Console.WriteLine("-----------------------");
+//////////////////////////////////////////////
+
+
+
+for (int p = 0; p <= a.Length - 2; p++)
+{​​
+for(int i = 0; i <= a.Length - 2; i++ )
+{​​
+
+
+
+if (a[i] > a[i + 1])
+{​​
+t = a[i + 1];
+a[i + 1] = a[i];
+a[i] = t;
+}​​
+}​​
+
+
+
+}​​
+
+
+
+Console.WriteLine("\n" + "Ordenados :");
+foreach (int a3 in a)
+Console.WriteLine(a3 + " ");
+Console.WriteLine("\n");
