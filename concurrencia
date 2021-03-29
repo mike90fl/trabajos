@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Threading;
+
+
+namespace ConsoleApp7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            void f1 ();
+            void f2();
+           
+            void g(){
+                Thread t1{ f1}; //lanza un hilo que ejecuta f1()
+
+                Thread t2{ f2}; // lanza un hilo que ejecuta f2()
+
+                t1.Join(); //lespera a que t1 termine 
+                t2.Join();// espera a que t2 termine 
+                    
+            }
+               
+            
+        }
+    }
