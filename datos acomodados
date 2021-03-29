@@ -1,0 +1,23 @@
+Console.WriteLine("escribe un primer numero para identificar el triangulo");
+            Console.WriteLine("ingresa una medida");
+            int medida1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("ingresa una segunda medida");
+            int medida2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("ingresa una tercer medida");
+            int medida3 = Convert.ToInt32(Console.ReadLine());
+
+            if ((medida1 == medida2) && (medida1 == medida3) &&(medida2 ==medida3))
+            {
+                Console.WriteLine("triangulo equilatero");
+            }
+
+           else if ((medida1 == medida2) || (medida1 == medida3) && (medida2 > medida3))
+            {
+                Console.WriteLine("el triangulo  es isosceles");
+
+            }
+          else  if ((medida1 > medida2) && (medida2 < medida3))
+            {
+                Console.WriteLine("triangulo escaleno");
+
+            }
