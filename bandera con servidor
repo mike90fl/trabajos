@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+ 
+	<style>
+	#mexicana span {display:inline-block;width:66px;height:100px;}
+	#mexicana span:nth-child(1) {background-color:#006847;}
+	#mexicana span:nth-child(2) {background-color:#fff;}
+	#mexicana span:nth-child(3) {background-color:#ce1126;} 
+	<title> hola mundo <title> 
+	<meta charset="utf-8" />
+	</style>
+</head>
+ 
+<body>
+ 
+<div id="mexicana">
+	<span></span>
+	<span></span>
+	<span></span>
+</div>
+ 
+</body>
+</html>
+
+/////
+var http = require('http');
+var fs = require('fs');
+http.createServer(function (req, res) {
+  fs.readFile('imagen.index.html', function(err, data) {
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.write(data);
+    return res.end();
+  });
+}).listen(8080);
+
