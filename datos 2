@@ -1,0 +1,63 @@
+Console.WriteLine("escribe tu nombre por favor ");
+
+            string nombre = Console.ReadLine();
+            switch (nombre)
+            {
+                case "miguel angel":
+                    Console.WriteLine("bienvenido miguel angel");
+                    break;
+
+            }
+            Console.WriteLine("por favor selecione un mes del uno al doce");
+
+            int numero = Convert.ToInt32(Console.ReadLine());
+            
+        
+          switch (numero)
+            {
+                case 1:
+                    Console.WriteLine("enero");
+                    break;
+                case 2:
+                    Console.WriteLine("febrero");
+                    break;
+
+                case 3:
+                    Console.WriteLine("marzo");
+                    break;
+                case 4:
+                    Console.WriteLine("abril");
+                    break;
+                case 5:
+                    Console.WriteLine("mayo");
+                    break;
+                    
+                case 6:
+                    Console.WriteLine("junio ");
+                    break;
+                case 7:
+                    Console.WriteLine("julio");
+                    break;
+                case 8:
+                    Console.WriteLine("agosto");
+                    break;
+                case 9:
+                    Console.WriteLine("sepetiembre");
+                    break;
+                case 10:
+                    Console.WriteLine("octubre");
+                    break;
+                case 11:
+                    Console.WriteLine("noviembre");
+                    break;
+                case 12:
+                    Console.WriteLine("diciembre");
+                    break;
+
+
+                   
+
+
+
+            }
+            Console.WriteLine("muchas gracias que tenga buen dia");
