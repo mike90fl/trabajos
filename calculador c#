@@ -1,0 +1,47 @@
+int numero1;
+            int numero2;
+            Console.WriteLine(" esta es tu calculadora profesional");
+            Console.WriteLine("-------------------------------");
+
+            Console.WriteLine(" escribe el primer numero ");
+            numero1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("escribe el segundo numero");
+            numero2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("selecciona una opcion de la siguinte lista ");
+            Console.WriteLine("\ta-suma");
+            Console.WriteLine("\tb- resta");
+            Console.WriteLine("\tc- multiplicacion");
+            Console.WriteLine("\td- division");
+
+
+            Console.WriteLine("tu elecion? ");
+            ///////////
+            switch (Console.ReadLine())
+            {
+                case "a":
+                    Console.WriteLine($"tu resultado es: {numero1} + {numero2} =" + (numero1 + numero2));
+                    break;
+
+                case "b":
+                    Console.WriteLine($"tu resultado es: {numero1} - {numero2}=" + (numero1 - numero2));
+                    break;
+
+                case "c":
+                    Console.WriteLine($"tu resultado es : {numero1} * {numero2}=" + (numero1 * numero2));
+                    break;
+
+                case "d":
+                    Console.WriteLine($"tu resusltado es : {numero1} / {numero2}=" + (numero1) / (numero2));
+                    break;
+                default:
+                    Console.WriteLine("selecciona una opccion de la siguente lista");
+
+           
+                   break;
+                
+
+
+
+            } 
