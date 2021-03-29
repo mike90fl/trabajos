@@ -1,0 +1,51 @@
+int numero1 = 10;
+            int numero2 = 4;
+            int numero3 = 5;
+            int resultadosuma = numero1 + numero2 + numero3;
+            Console.WriteLine("el resultado de tu suma es;" + resultadosuma);
+//////////
+Console.WriteLine("Escribe tu Nombre: ");
+String nombre = Console.ReadLine();
+
+
+
+Console.WriteLine("Escribe tu edad: ");
+String TextEdad = Console.ReadLine();
+
+
+
+int edad = Convert.ToInt32(TextEdad);
+
+
+
+Console.WriteLine("Te llamas: " + nombre + " y tu edad es " + edad);
+///////////
+Console.WriteLine("Escribe tu Primer Numero: ");
+int num1 = Convert.ToInt32(Console.ReadLine());
+
+
+
+Console.WriteLine("Escribe tu segundo numero :D");
+int num2 = Convert.ToInt32(Console.ReadLine());
+
+if(num1 >= num2){​​
+
+
+
+Console.WriteLine("Primer Numero es mayor o igual al segundo");
+}​​
+
+
+
+else {​​
+
+
+
+Console.WriteLine("El segundo numero es mayor al primero");
+
+
+
+}​​
+
+
+}​​
